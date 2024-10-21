@@ -1,0 +1,174 @@
+:root {
+    --primary: #814e28;
+    --primary-focus: #734424;
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.font-archivo {
+    font-family: 'Archivo', sans-serif !important;
+}
+
+.active {
+    color: var(--primary) !important;
+}
+
+.nav-link:hover {
+    color: var(--primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-focus) !important;
+}
+
+.contact-section img {
+    width: 100%; 
+    margin-bottom: 1rem; /* Menambahkan ruang di bawah gambar */
+    position: relative; /* Mengatur posisi */
+    z-index: 1; /* Memberikan nilai z-index */
+}
+
+.contact-section .btn {
+    margin-top: 1rem; /* Menambahkan jarak atas pada tombol */
+    position: relative; /* Mengatur posisi */
+    z-index: 2; /* Memastikan tombol berada di atas gambar */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    #home h1 {
+        font-size: 2.5rem; /* Lebih kecil di layar lebih kecil */
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    #home .col-lg-6 {
+        text-align: center; /* Center align for smaller screens */
+    }
+    
+    #about, #product, #contact {
+        text-align: center; /* Center align all sections */
+    }
+}
+
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 1.5rem;
+    }
+
+    #home p {
+        font-size: 0.9rem;
+    }
+
+    #about img,
+    #contact img {
+        max-width: 100%; /* Ensure images are responsive */
+        height: auto;
+    }
+
+    .contact-form {
+        margin: 0 auto; /* Center form on small screens */
+    }
+
+    .product-section h1 {
+        font-size: 2rem; /* Reduce heading size on smaller screens */
+    }
+    
+    .product-section .btn {
+        padding: 0.5rem 1rem; /* Reduce button padding */
+        font-size: 0.9rem; /* Smaller font size for button */
+    }
+
+    .product-section .col-3 {
+        margin-bottom: 1.5rem; /* Add space between columns */
+    }
+    /* Section Contact */
+.contact-section {
+    margin-top: 2rem;
+}
+}
+
+
+
+@media (max-width: 576px) {
+    #home h1 {
+        font-size: 1.2rem;
+    }
+
+    #home p {
+        font-size: 0.8rem;
+    }
+
+    .product-card {
+        padding: 10px;
+    }
+
+    .product-card img {
+        width: 100%; /* Full width for small devices */
+        height: auto;
+    }
+
+    .contact-section .row {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .contact-section img {
+        width: 100%; /* Make image responsive */
+        margin-bottom: 1rem; /* Add space below the image */
+    }
+
+    .contact-section .col-6 {
+        align-items: center; 
+    }
+
+    .contact-section form {
+        width: 100%; 
+
+    .contact-section .row {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+
+    .contact-section .col-6 {
+        margin-bottom: 1rem; 
+    }
+
+    .contact-section .btn {
+        margin-top: 1rem; 
+        position: relative; 
+        z-index: 2; 
+
+        #contact .col-6 {
+            position: relative; 
+        }
+        
+        #contact .btn {
+            position: absolute; 
+            top: 20%; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            z-index: 10; 
+        }
+        
+        #contact img {
+            max-width: 100%; 
+            height: auto; 
+        }
+}
+}
+}
